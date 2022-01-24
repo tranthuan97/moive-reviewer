@@ -1,8 +1,21 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "pages/Home";
+
 function App() {
   return (
-    <div className="text-center">
-     <p className='bg-warning text-secondary'>Welcome to my react app !</p>
-    </div>
+   <div>
+     <Routes>
+        <Route path="/" element={<Home />}>
+          {/* <Route index element={<Home />} />
+        <Route path="teams" element={<Teams />}>
+          <Route path=":teamId" element={<Team />} />
+          <Route path="new" element={<NewTeamForm />} />
+          <Route index element={<LeagueStandings />} />
+        </Route> */}
+        </Route>
+        <Route path="*" element={<Home />} />
+      </Routes>
+   </div>
   );
 }
 

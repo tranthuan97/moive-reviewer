@@ -1,0 +1,32 @@
+.backgroundWrapper {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(31, 29, 29, 0.5);
+}
+
+.item {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 50px 45px 45px 65px;
+}
+
+.itemScore {
+  background-color: #F1B721;
+  width: fit-content;
+  padding: 2px 10px;
+  font-weight: 900;
+  border-radius: 50px;
+}
+
+.itemTitle {
+  font-size: 72px;
+  font-weight: 800;
+  color: white;
+}

@@ -6,25 +6,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import {
-  BrowserRouter,
-  Routes,
-  Route
+  BrowserRouter
 } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          {/* <Route index element={<Home />} />
-        <Route path="teams" element={<Teams />}>
-          <Route path=":teamId" element={<Team />} />
-          <Route path="new" element={<NewTeamForm />} />
-          <Route index element={<LeagueStandings />} />
-        </Route> */}
-        </Route>
-        <Route path="*" element={<App />} />
-      </Routes>
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
