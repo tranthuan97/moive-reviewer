@@ -1,13 +1,22 @@
+.colItem {
+  overflow: hidden;
+  cursor: pointer;
+}
+
 .backgroundWrapper {
   background-size: cover;
   background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
 }
 
 .overlay {
   height: 100%;
   width: 100%;
+  overflow: hidden;
   position: absolute;
-  background-color: rgba(31, 29, 29, 0.5);
+  z-index: 1;
 }
 
 .item {
@@ -25,8 +34,41 @@
   border-radius: 50px;
 }
 
-.itemTitle {
+.itemTitle1 {
   font-size: 72px;
   font-weight: 800;
   color: white;
+}
+
+.itemTitle2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+}
+
+.colItem:hover .overlay {
+  background-color: rgba(31, 29, 29, 0.3);
+}
+
+.colItem:hover .backgroundWrapper {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 992px) {
+  .itemTitle1 {
+    font-size: 62px;
+  }
+  
+  .itemTitle2 {
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+  }
+
+  .item {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 50px 20px 30px 30px;
+  }
 }
