@@ -51,7 +51,7 @@
 }
 
 .colItem:hover .backgroundWrapper {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 @media only screen and (max-width: 992px) {
